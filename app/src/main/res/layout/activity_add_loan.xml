@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddLoanActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/splash_screen_background">
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/back_arrow_white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="Add Loan Category"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Type Of Loan"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/typeOfLoan"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/edit_text_back"
+                        android:paddingStart="15dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Rate Of Interest"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/rateOfInterest"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/edit_text_back"
+                        android:paddingStart="15dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Time (From)"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/timeFrom"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:drawableEnd="@drawable/calender_icon"
+                        android:paddingEnd="15dp"
+                        android:background="@drawable/edit_text_back"
+                        android:paddingStart="15dp" />
+
+                    <!--                    <LinearLayout-->
+                    <!--                        android:layout_width="match_parent"-->
+                    <!--                        android:layout_height="wrap_content"-->
+                    <!--                        android:layout_marginTop="5dp"-->
+                    <!--                        android:background="@drawable/edit_text_back"-->
+                    <!--                        >-->
+                    <!--                        <Spinner-->
+                    <!--                            android:layout_width="0dp"-->
+                    <!--                            android:layout_weight="1"-->
+                    <!--                            android:layout_height="50dp"-->
+                    <!--                            android:paddingStart="15dp" />-->
+
+                    <!--                    </LinearLayout>-->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Time (To)"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/timeTo"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:drawableEnd="@drawable/calender_icon"
+                        android:paddingEnd="15dp"
+                        android:background="@drawable/edit_text_back"
+                        android:paddingStart="15dp" />
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Member Percentage"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/memberRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/edit_text_back"
+                        android:paddingStart="15dp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="25dp"
+                        android:text="Non - Member percentage"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/nonMemberRate"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_marginTop="5dp"
+                        android:inputType="numberDecimal"
+                        android:background="@drawable/edit_text_back"
+                        android:paddingStart="15dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        >
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/submitLoan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_background_yellow"
+                            android:gravity="center"
+                            android:text="Submit"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:visibility="gone"
+                            android:id="@+id/updateLoan"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/btn_background_yellow"
+                            android:gravity="center"
+                            android:text="Update"
+                            android:textColor="@android:color/holo_red_dark"
+                            android:textSize="18sp"
+                            android:textStyle="normal" />
+
+                    </RelativeLayout>
+
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

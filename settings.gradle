@@ -1,0 +1,2 @@
+rootProject.name = "LoanAdmin"
+include ':app'
